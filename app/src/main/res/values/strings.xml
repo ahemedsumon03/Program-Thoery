@@ -1,0 +1,1173 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Program Language Information</string>
+
+    <string name="printf">
+
+    The term "printf" is due to the C language, which popularized this type of function,
+    but these functions predate C, and other names are used, notably "format".
+    Printf format strings, which provide formatted output (templating),
+    are complementary to scanf format strings, which provide formatted input (parsing)\n\n
+
+
+        Example:\n\n
+
+        int main()\n
+        {\n
+          printf("What is Your name?");\n
+        }\n
+
+
+    </string>
+    <string name="scanf">
+
+
+    scanf is a function that reads data with specified format from a given string stream source,
+    originated from C programming language, and is present in many other programming languages.
+    The scanf function prototype is: int scanf(const char *format);\n\n
+
+        Example:\n\n
+
+        int main()\n
+        {\n
+          int a;\n
+          scanf("%d",&amp;a);\n
+        }\n
+
+    </string>
+    <string name="loop">
+
+    In computer programming, a loop is a sequence of instruction s that is continually
+    repeated until a certain condition is reached. Typically, a certain process is done,
+    such as getting an item of data and changing it, and then some condition is checked
+    such as whether a counter has reached a prescribed number.\n\n
+
+        Example:\n\n
+        for loop:\n\n
+        for(initialization;condition;increment)\n
+        {\n
+          Expression here.....\n
+        }\n\n
+
+        while loop:\n\n
+
+        while(condition)\n
+        {\n
+          Expression here....\n
+          increment;\n
+        }\n\n
+
+        do-while loop:\n\n
+
+        do{
+          Expression here...\n
+          increment;\n
+        }(condition);\n
+
+    </string>
+
+    <string name="condition">
+
+    In computer science, conditional statements, conditional expressions and conditional
+    constructs are features of a programming language, which perform different
+    computations or actions depending on whether a programmer-specified boolean
+    condition evaluates to true or false.\n\n
+
+        Example:\n\n
+
+        if(condition)\n
+        {\n
+
+        }\n
+        else if(condition)\n
+        {\n
+
+        }\n
+
+        while(condition)\n
+        {\n
+
+        }\n
+
+
+    </string>
+
+    <string name="String">
+
+    A string in C is merely an array of characters. The length of a string is determined
+    by a terminating null character: \0 . So, a string with the contents, say,
+    "abc" has four characters:and the terminating null character.The terminating null character has the value zero.\n\n
+
+      Example:\n\n
+
+        int main()\n
+        {\n
+          string name = "BUBT";\n
+          printf("%s",name);\n
+        }\n
+
+
+    </string>
+
+    <string name="Operator">
+
+     C language supports a rich set of built-in operators. An operator is a symbol that
+     tells the compiler to perform a certain mathematical or logical manipulation.
+     Operators are used in programs to manipulate data and variables.\n\n
+
+        Example: \n\n
+        int main()\n
+        {\n
+          int num1 , num2 ;\n
+          num1 + num2;\n
+          num1 - num2;\n
+          num1 * num2;\n
+          num1 / num2;\n
+          num1 % num2;\n
+
+        }\n
+
+    </string>
+
+    <string name="File">
+
+    A file represents a sequence of bytes on the disk where a group of related data is stored.
+    File is created for permanent storage of data. It is a ready made structure.
+    In C language, we use a structure pointer of file type to declare a file.\n\n
+
+        Example: \n\n
+
+        int main()\n
+         {\n
+            FILE *fp;\n
+            fp=fopen("file.txt","w");\n
+            fclose(fp);\n
+            return 0;\n
+         }\n
+
+    </string>
+
+    <string name="Structure">
+
+    A struct in the C programming language (and many derivatives) is a composite data type
+    (or record) declaration that defines a physically grouped list of variables to be
+    placed under one name in a block of memory, allowing the different variables to be
+    accessed via a single pointer.\n\n
+
+        Example: \n\n
+
+        struct Point\n
+        {\n
+           int x,y;\n
+        };\n
+
+        int main()\n
+        {\n
+           struct Point p1 = {0, 1};\n
+           p1.x = 20;\n
+           printf ("x = %d, y = %d", p1.x, p1.y);\n
+
+           return 0;\n
+        }\n
+
+    </string>
+
+    <string name="NestedLoop">
+
+    A nested loop is a loop within a loop, an inner loop within the body of an outer one.
+    Then the second pass of the outer loop triggers the inner loop again.
+    This repeats until the outer loop finishes. Of course, a break within either the
+    inner or outer loop would interrupt this process.\n\n
+
+        Example: \n\n
+
+        for(initialization; condition; update)\n
+        {\n
+            // statements\n
+
+            for(initialization; condition; update)\n
+            {\n
+                // Inner loop statements\n
+            }\n
+
+            // statements\n
+        }\n
+
+    </string>
+
+    <string name="Array">
+
+    An array is a collection of data items,all of the same type, accessed using a common
+    name. A one-dimensional array is like a list. A two dimensional array is like
+    a table. The C language places no limits on the number of dimensions in an array,
+    though specific implementations may.\n
+
+        Example: \n\n
+
+        int main()\n
+        {\n
+          string name[20];\n
+          name[0]= "Dhaka";\n
+          name[1] = "Rajshahi";\n
+
+          printf("%d",name[0]);\n
+
+        }\n
+
+    </string>
+
+    <string name="Switch">
+
+    In computer programming languages, a switch statement is a type of selection control
+    mechanism used to allow the value of a variable or expression to change the control
+    flow of program execution via a multiway branch.\n
+
+        Example: \n\n
+
+        switch (n)\n
+        ​{
+            case constant1:\n
+                // code to be executed if n is equal to constant1;\n
+                break;\n
+
+            case constant2:\n
+                // code to be executed if n is equal to constant2;\n
+                break;\n
+
+            default:\n
+                // code to be executed if n doesn't match any constant\n
+        }\n
+
+    </string>
+
+    <string name="NestedIf">
+
+    Placing If Statement inside another IF Statement is called Nested If in C Programming.
+    If Else  statement in C  allows us to print different statements depending upon
+    the expression result (TRUE, FALSE). Sometimes we have to check further even when
+    the condition is TRUE. In these situation, we can use Nested IF statements but be
+    careful while using it.\n\n
+
+        Example: \n\n
+
+        if (testExpression1) \n
+        {\n
+           // statement(s)\n
+        }\n
+        else if(testExpression2)\n
+        {\n
+           // statement(s)\n
+        }\n
+        else if (testExpression 3)\n
+        {\n
+           // statement(s)\n
+        }\n
+
+        else\n
+        {\n
+           // statement(s)\n
+        }\n
+
+
+
+    </string>
+
+    <string name="HeaderFile">
+
+     A header file is a file containing C declarations and macro definitions (see Macros)
+    to be shared between several source files. You request the use of a header file
+    in your program by including it, with the C preprocessing directive.\n\n
+
+        Example: \n\n
+
+        #include stdio.h\n
+        #include stdlib.h\n
+        #include math.h\n
+        #include windows.h\n
+        excetra..
+    </string>
+
+    <string name="ForLoop">
+
+    Syntax. The syntax of a for loop in C programming language is for ( init ;condition;      increment ){statement(s);} Here is the flow of control in a for loop − The init step      is executed first and only once. This step allows you to declare and initialize any       loop control variables.\n\n
+
+        Example:\n\n
+        for loop:\n\n
+        for(initialization;condition;increment)\n
+        {\n
+          Expression here.....\n
+        }\n\n
+
+    </string>
+
+    <string name="WhileLoop">
+
+    In most computer programming languages, a while loop is a control flow statemen that
+    allows code to be executed repeatedly based on a given Boolean condition.
+    The while loop can be thought of as a repeating if statement.\n\n
+
+        while loop:\n\n
+
+        while(condition)\n
+        {\n
+          Expression here....\n
+          increment;\n
+        }\n\n
+
+    </string>
+
+    <string name="Pointer">
+
+     Pointer point Same kind of type mememoy location for find in his value.Int pointer
+     point int variable and so on.\n\n
+
+        Example:\n\n
+
+        int main()\n
+        {\n
+          int var = 5;\n
+          printf("Value: %d\n", var);\n
+          printf("Address: %u", &amp;var);\n
+          return 0;\n
+        }\n
+
+    </string>
+
+    <string name="About">
+
+               Developed BY SUMON AHEMED (BUBT)
+
+
+   I am student of Bangladesh University of Bussiness and Technology (BUBT).First time I     develop a Simple Android App.Hopefully you have to be usefull for using this app.
+
+
+
+    </string>
+
+    <string name="Systemout">
+
+     System.out.printf("The String object %s is at hash code %h%n", s, s); String class
+     format( ) method: You can build a formatted String and assign it to a variable
+     using the static format method in the String class. The use of a format string
+     and argument list is identical to its use in the printf method.\n\n
+
+        Example:\n\n
+
+        public static void main(string[]args)\n
+        {\n
+          system.out.println("What is your name?");\n
+        }\n
+
+    </string>
+
+    <string name="Scanner">
+
+    Introduction. The java.util.Scanner class is a simple text scanner which can parse
+    primitive types and strings using regular expressions.Following are the important
+    points about Scanner − A Scanner breaks its input into tokens using a delimiter
+    pattern, which by default matches whitespace.\n\n
+
+        Example:\n\n
+        public static void main(string[]args)\n
+        {\n
+            System.out.println("Enter your username: ");\n
+            Scanner scanner = new Scanner(System.in);\n
+            String username = scanner.nextLine();\n
+            System.out.println("Your username is " + username);\n
+        }\n
+
+    </string>
+
+    <string name="Class">
+
+    Defining a Class.A class the basic building block of an object-oriented language such
+    as Java is a template that describes the data and behavior associated with instances
+    of that class. When you instantiate a class you create an object that looks and
+    feels like other instances of the same class.\n\n
+
+        Example: \n\n
+        public class Dog {\n
+           String breed;\n
+           int age;\n
+           String color;\n
+
+           void barking() {\n
+           }\n
+
+           void hungry() {\n
+           }\n
+
+           void sleeping() {\n
+           }\n
+        }\n
+
+    </string>
+
+    <string name="Condition">
+
+    Any calls to change the condition variables do need to be within a synchronized region
+    this can be through the built in synchronized keyword or one of the synchronizer
+    classes provided by the java.util.concurrent package such as Lock.\n\n
+
+        Example:\n\n
+
+        if (condition) {\n
+           // codes
+        }\n
+        else {\n
+          // some other code\n
+        }\n
+
+
+    </string>
+
+    <string name="Loop">
+
+    A loop statement allows us to execute a statement or group of statements multiple times
+    and following is the general form of a loop statement in most of the programming         languages Java programming language provides the following types of loop to handle       looping requirements. \n\n
+
+        Example:\n\n
+
+        for loop:\n\n
+        for(initialization;condition;increment)\n
+        {\n
+          Expression here.....\n
+        }\n\n
+
+        while loop:\n\n
+
+        while(condition)\n
+        {\n
+          Expression here....\n
+          increment;\n
+        }\n\n
+
+        do-while loop:\n\n
+
+        do{
+          Expression here...\n
+          increment;\n
+        }(condition);\n
+
+
+
+    </string>
+
+    <string name="Inheritance">
+
+    Inheritance refers to a feature of Java programming that lets you create classes that
+    are derived from other classes. A class thats based on another class inherits the
+    other class. The class that is inherited is the parent class, the base class, or the
+    superclass.\n\n
+
+        Example:\n\n
+        class Teacher {\n
+           String designation = "Teacher";\n
+           String collegeName = "Beginnersbook";\n
+           void does(){\n
+            System.out.println("Teaching");\n
+           }\n
+        }\n
+
+        public class PhysicsTeacher extends Teacher{\n
+           String mainSubject = "Physics";\n
+           public static void main(String args[]){\n
+            PhysicsTeacher obj = new PhysicsTeacher();\n
+            System.out.println(obj.collegeName);\n
+            System.out.println(obj.designation);\n
+            System.out.println(obj.mainSubject);\n
+            obj.does();\n
+           }\n
+        }\n
+
+    </string>
+
+    <string name="Polymorphisum">
+
+    Polymorphism is the ability of an object to take on many forms. The most common use of
+    polymorphism in OOP occurs when a parent class reference is used to refer to a child
+    class object.Any Java object that can pass more than one IS-A test is considered to
+    be polymorphic.\n\n
+
+        Example:\n\n
+        class Bike{\n
+               void run(){System.out.println("running");}\n
+             }\n
+             class Splender extends Bike{\n
+               void run(){System.out.println("running safely with 60km");}\n
+
+               public static void main(String args[]){\n
+                 Bike b = new Splender();//upcasting\n
+                 b.run();\n
+               }\n
+      }\n
+
+    </string>
+
+    <string name="Encapsulation">
+
+    Encapsulation is one of the four fundamental OOP concepts. The other three inheritance,
+    polymorphism, and abstraction. Encapsulation in Java is a mechanism of wrapping the data
+    (variables) and code acting on the data (methods) together as a single unit. Declare the
+    variables of a class as private.\n\n
+
+        Example:\n\n
+
+        /* File name : EncapTest.java */\n\n
+        public class EncapTest {\n
+           private String name;\n
+           private String idNum;\n
+           private int age;\n
+
+           public int getAge() {\n
+              return age;\n
+           }\n
+
+           public String getName() {\n
+              return name;\n
+           }\n
+
+           public String getIdNum() {\n
+              return idNum;\n
+           }\n
+
+           public void setAge( int newAge) {\n
+              age = newAge;\n
+           }\n
+
+           public void setName(String newName) {\n
+              name = newName;\n
+           }\n
+
+           public void setIdNum( String newId) {\n
+              idNum = newId;\n
+           }\n
+        }\n
+
+        /* File name : RunEncap.java */\n\n
+        public class RunEncap {\n
+
+           public static void main(String args[]) {\n
+              EncapTest encap = new EncapTest();\n
+              encap.setName("James");\n
+              encap.setAge(20);\n
+              encap.setIdNum("12343ms");\n
+
+              System.out.print("Name : " + encap.getName() + " Age : " + encap.getAge());\n
+           }\n
+        }\n
+
+    </string>
+
+    <string name="Abatraction">
+
+    Abstraction is the process of abstraction in Java is used to hide certain details and
+    only show the essential features of the object. In other words, it deals with the
+    outside view of an object (interface). Now this is the part which confuses me always.\n\n
+
+        Example:\n\n
+
+         public abstract class Employee {\n
+           private String name;\n
+           private String address;\n
+           private int number;\n
+
+           public abstract double computePay();\n
+           // Remainder of class definition\n
+      }
+
+        /* File name : Salary.java */\n\n
+        public class Salary extends Employee {\n
+           private double salary;  // Annual salary\n
+
+           public double computePay() {\n
+              System.out.println("Computing salary pay for " + getName());\n
+              return salary/52;\n
+           }\n
+           // Remainder of class definition\n
+        }\n
+
+
+    </string>
+
+    <string name="Interface">
+
+    An interface in java is a blueprint of a class. It has static constants and abstract
+    methods. The interface in java is a mechanism to achieve abstraction. There can be
+    only abstract methods in the java interface not method body. It is used to achieve
+    abstraction and multiple inheritance in Java.\n\n
+
+        Example:\n\n
+
+        /* File name : Animal.java */\n\n
+            interface Animal {\n
+               public void eat();\n
+               public void travel();\n
+            }\n
+
+        /* File name : MammalInt.java */\n\n
+            public class MammalInt implements Animal {\n
+
+               public void eat() {\n
+                  System.out.println("Mammal eats");\n
+               }\n
+
+               public void travel() {\n
+                  System.out.println("Mammal travels");\n
+               }\n
+
+               public int noOfLegs() {\n
+                  return 0;\n
+               }\n
+
+               public static void main(String args[]) {\n
+                  MammalInt m = new MammalInt();\n
+                  m.eat();\n
+                  m.travel();\n
+               }\n
+            }\n
+
+    </string>
+
+    <string name="file">
+
+    java.lang.Object | +----java.io.File public class File extends Object implements
+    Serializable. Instances of this class represent the name of a file or directory on
+    the host file system. A file is specified by a pathname, which can either be an
+    absolute pathname or a pathname relative to the current working directory.\n\n
+
+        Example:\n\n
+
+        public class CopyFile {\n
+
+           public static void main(String args[]) throws IOException {\n
+              FileInputStream in = null;\n
+              FileOutputStream out = null;\n
+
+              try {\n
+                 in = new FileInputStream("input.txt");\n
+                 out = new FileOutputStream("output.txt");\n
+
+                 int c;\n
+                 while ((c = in.read()) != -1) {\n
+                    out.write©;\n
+                 }\n
+              }finally {\n
+                 if (in != null) {\n
+                    in.close();\n
+                 }\n
+                 if (out != null) {\n
+                    out.close();\n
+                 }\n
+              }\n
+           }\n
+        }\n
+
+    </string>
+
+    <string name="ArrayList">
+
+    The ArrayList class extends AbstractList and implements the List interface. ArrayList
+    supports dynamic arrays that can grow as needed. Standard Java arrays are of a
+    fixed length. After arrays are created, they cannot grow or shrink,which means
+    that you must know in advance how many elements an array will hold.\n\n
+
+        Example: \n\n
+
+        class ArrayList1{\n
+        public static void main(String args[]){\n
+        ArrayList(String)list=new ArrayList(String)();//Creating arraylist\n
+              list.add("Ravi");//Adding object in arraylist\n
+              list.add("Vijay");\n
+              list.add("Ravi");\n
+              list.add("Ajay");\n
+              //Invoking arraylist object\n
+              System.out.println(list);\n
+           }\n
+         }\n
+   }\n
+
+
+
+    </string>
+
+    <string name="Linkedlist">
+
+    A linked list is a linear data structure where each element is a separate object.
+    Each element (we will call it a node) of a list is comprising of two items the
+    data and a reference to the next node. The last node has a reference to null.\n\n
+
+        Example:\n\n
+
+           class ArrayList1{\n
+        public static void main(String args[]){\n
+        Linkedlist (String)list=new Linkedlist (String)();//Creating Linkedlist\n
+              list.add("Ravi");//Adding object in arraylist\n
+              list.add("Vijay");\n
+              list.add("Ravi");\n
+              list.add("Ajay");\n
+              //Invoking Linkedlist object\n
+              System.out.println(list);\n
+           }\n
+         }\n
+   }\n
+
+
+
+    </string>
+
+    <string name="Hashmap">
+
+    Hashmap is that kind of Keyword where we store value under a key value.That means
+    Hashmap is Storing value under the key value.Basically we use hashmap when we
+    create Expandable listview in android development.In Sqlite database in android
+    we use hashmap in SharedPreference.\n\n
+
+        Example: \n\n
+
+        class HashMap1{\n
+         public static void main(String args[]){\n
+           HashMap (Integer ,String) hm=new HashMap(Integer ,  String)();\n
+            System.out.println("Initial list of elements: "+hm);\n
+              hm.put(100,"Amit");\n
+              hm.put(101,"Vijay");\n
+              hm.put(102,"Rahul");\n
+
+               System.out.println("After invoking put() method ");\n
+               for(Map.Entry m:hm.entrySet()){\n
+               System.out.println(m.getKey()+" "+m.getValue());\n
+              }\n
+        }\n
+
+    </string>
+
+    <string name="switch1">
+
+    switch statement in java. Advertisements. A switch statement allows a variable to be
+    tested for equality against a list of values. Each value is called a case, and the
+    variable being switched on is checked for each case.\n\n
+
+        Example: \n\n
+
+            switch(expression) {\n
+       case value :\n
+          // Statements\n
+          break; // optional\n
+
+       case value :\n
+          // Statements\n
+          break; // optional\n
+
+       // You can have any number of case statements.\n
+       default : // Optional\n
+          // Statements\n
+    }\n
+
+    </string>
+
+    <string name="Operator1">
+
+    switch statement in java. Advertisements. A switch statement allows a variable to be
+    tested for equality against a list of values. Each value is called a case, and the
+    variable being switched on is checked for each case.\n\n
+
+        Example: \n\n
+        int main()\n
+        {\n
+          int num1 , num2 ;\n
+          num1 + num2;\n
+          num1 - num2;\n
+          num1 * num2;\n
+          num1 / num2;\n
+          num1 % num2;\n
+
+        }\n
+
+
+    </string>
+
+    <string name="Packege">
+
+    A package is a namespace that organizes a set of related classes and interfaces.
+    Conceptually you can think of packages as being similar to different folders on
+    your computer. You might keep HTML pages in one folder, images in another, and
+    scripts or applications in yet another.\n\n
+
+        Example:\n\n
+
+        /* File name : Animal.java */\n\n
+        package animals;\n
+
+        interface Animal {\n
+           public void eat();\n
+           public void travel();\n
+        }\n
+
+        package animals;\n
+    /* File name : MammalInt.java */\n
+
+    public class MammalInt implements Animal {\n
+
+       public void eat() {\n
+          System.out.println("Mammal eats");\n
+       }\n
+
+       public void travel() {\n
+          System.out.println("Mammal travels");\n
+       }\n
+
+       public int noOfLegs() {\n
+          return 0;\n
+       }\n
+
+       public static void main(String args[]) {\n
+          MammalInt m = new MammalInt();\n
+          m.eat();\n
+          m.travel();\n
+       }\n
+    } \n
+
+
+
+    </string>
+
+    <string name="Static">
+
+    In Java,a static member is a member of a class that isnt associated with an instance
+    of a class. Instead, the member belongs to the class itself.As a result, you can
+    access the static member without first creating a class instance. The value of a
+    static field is the same across all instances of the class.\n\n
+
+        Example: \n\n
+
+        class Test {\n
+        static int i;\n
+        int j;\n
+
+        // start of static block\n
+        static {\n
+            i = 10;\n
+            System.out.println("static block called ");\n
+        }\n
+        // end of static block\n
+    }\n
+
+    class Main {\n
+        public static void main(String args[]) {\n
+
+            // Although we don't have an object of Test, static block is\n
+            // called because i is being accessed in following statement.\n
+            System.out.println(Test.i);\n
+        }\n
+    }\n
+
+    </string>
+
+    <string name="Final">
+
+    final (Java) From Wikipedia,the free encyclopedia.Jump to: navigation, search.
+    In the Java programming language, the final keyword is used in several contexts to
+    define an entity that can only be assigned once.Once a final variable has been
+    assigned, it always contains the same value.\n\n
+
+        Example: \n\n
+
+        class main()\n
+        {\n
+           final String name = "Sumon Ahmed";\n
+           final int value  = 100;\n
+           final String varsity = "Bangladesh university of Business and Technology";\n
+        }\n
+
+
+
+    </string>
+
+    <string name="String1">
+
+    Strings, which are widely used in Java programming, are a sequence of characters.
+    In the Java programming language,strings are objects.The Java platform provides
+    the String class to create and manipulate strings.\n\n
+
+        Example: \n\n
+
+        public static void main(String[] args)
+        {
+          String name = "BUBT";
+          system.out.println("Versity name is: "+ name);
+        }
+
+
+
+    </string>
+
+    <string name="StringBuffer">
+
+    Java provides the StringBuffer and String classes, and the String class is used to
+    manipulate character strings that cannot be changed. Simply stated, objects of type
+    String are read only and immutable. The StringBuffer class is used to represent
+    characters that can be modified.String str = new String("Stanford ").\n\n
+
+        Example: \n\n
+        class GFG {\n
+            public static void main(String[] args) \n
+            {\n
+                StringBuffer s = new StringBuffer("GeeksforGeeks"); \n
+                int p = s.length(); \n
+                int q = s.capacity(); \n
+                System.out.println("Length of string GeeksforGeeks=" + p); \n
+                System.out.println("Capacity of string GeeksforGeeks=" + q); \n
+            } \n
+        }\n
+
+
+
+    </string>
+
+    <string name="StringBuilder">
+
+    The StringBuilder Class. StringBuilder objects are like String objects, except that
+    they can be modified. Internally, these objects are treated like variable-length
+    arrays that contain a sequence of characters. At any point,the length and content
+    of the sequence can be changed through method invocations.\n\n
+
+        Example: \n\n
+
+        class StringBuilderExample{ \n
+            public static void main(String args[]){ \n
+            StringBuilder sb=new StringBuilder("Hello ");  \n
+            sb.append("Java");//now original string is changed  \n
+            System.out.println(sb);//prints Hello Java  \n
+            }  \n
+        } \n
+
+
+
+    </string>
+
+    <string name="writeline">
+        The difference between Write() and WriteLine() method is based on new line                character. Write() method displays the output but do not provide a new line               character. WriteLine() method displays the output and also provides a new line            character it the end of the string, This would set a new line for the next output.
+    </string>
+
+    <string name="readline">
+
+       string s= Console.ReadLine();//it always return string value. Console.WriteLine(s);       It gives the string as it is given in the input stream. ReadKey(): this method is         used to hold the output screen.when any key is press.
+
+    </string>
+
+    <string name="inharitance">
+
+        Inheritance, in C#, is the ability to create a class that inherits attributes and         behaviors from an existing class. The newly created class is the derived (or c            child) class and the existing class is the base (or parent) class. Inheritance is         one of the key features of object-oriented programming.
+
+    </string>
+
+    <string name="polimorphisum">
+        Polymorphism, in C#, is the ability of objects of different types to provide a            unique interface for different implementations of methods. It is usually used in          the context of late binding, where the behavior of an object to respond to a call         to its method members is determined based on object type at run time.
+    </string>
+
+    <string name="loop1">
+        The while loop in C# checks the condition before executing the statements in the          loop. As the execution reaches the last statement, the control is passed back to          the beginning of the loop and the condition is checked again. The loop continues          to execute until the condition evaluates to false.
+    </string>
+
+    <string name="foreachloop">
+        The foreach loop in C# executes a block of code on each element in an array or a          collection of items The foreach loop is useful for traversing each items in an            array or a collection of items and displayed one by one.
+    </string>
+
+    <string name="namespace">
+        Namespaces are used in C# to organize and provide a level of separation of codes.         They can be considered as a container which consists of other namespaces, classes,        etc. A namespace can have following types as its members: Namespaces (Nested              Namespace).
+    </string>
+
+    <string name="static1">
+            The Static Keyword. In C# terms, “static” means “relating to the type itself,             rather than an instance of the type In addition to methods and variables, you             can also declare a class to be static (since C# 2.0).A static class cannot be             instantiated and can only contain static members.
+    </string>
+
+    <string name="Methodhiding" tools:ignore="StringEscaping">
+        In short, name "hiding" in C# (new modifier) is called shadowing in VB.NET                (keyword Shadows). In C# parlance, when you say "hiding" you're usually talking            about inheritance, where a more derived method "hides" a base-class method from           the normal inherited method call chain.
+    </string>
+
+    <string name="MethodOverriding">
+        Method overriding is a feature that allows you to invoke functions (that have the         same signatures) that belong to different classes in the same hierarchy of                inheritance using the base class reference. C# makes use of two keywords: virtual         and overrides to accomplish Method overriding.
+    </string>
+
+    <string name="MethodOverloading">
+          Two or more than two methods having the same name but different parameters is             what we call method overloading in C#. Method overloading in C# can be performed          by changing the number of arguments and the data type of the arguments.
+    </string>
+
+    <string name="Struct">
+         A struct can implement interfaces, and it does that exactly as classes do. You            cannot declare a class using the keyword struct . In C#, classes and structs are          semantically different. A struct is a value type, while a class is a reference            type.
+    </string>
+
+    <string name="interface1">
+        C# Interface: An interface in C# contains only the declaration of the                     methods, properties, and events,but not the implementation. It is left to the             class that implements the interface by providing implementation for all the                members of the interface. Interface makes it easy to maintain a program.
+    </string>
+
+    <string name="AbstructClass">
+        An abstract class is a special type of class that cannot be instantiated. An              abstract class is designed to be inherited by subclasses that either implement or         override its methods. You can have functionality in your abstract class—the              methods in an abstract class can be both abstract and concrete.
+    </string>
+
+    <string name="Delegets">
+        Advertisements. C# delegates are similar to pointers to functions, in C or C++. A         delegate is a reference type variable that holds the reference to a method. The           reference can be changed at runtime. Delegates are especially used for implementing       events and the call-back methods.
+    </string>
+
+    <string name="ExceptionHandling">
+        A C# exception is a response to an exceptional circumstance that arises while a           program is running, such as an attempt to divide by zero. Exceptions provide a way        to transfer control from one part of a program to another.C# exception handling is        built upon four keywords: try, catch, finally, and throw.
+    </string>
+
+    <string name="Enums">
+        An enumeration is a set of named integer constants. An enumerated type is declared        using the enum  keyword. C# enumerations are value data type. In other words,             enumeration contains its own values and cannot inherit or cannot pass inheritance.
+    </string>
+
+    <string name="AccessModifier">
+         Access Modifiers (Access Specifiers) describes as the scope of accessibility of           an Object and its members. All C# types and type members have an accessibility            level . We can control the scope of the member object of a class using access             specifiers.
+    </string>
+
+    <string name="Thread">
+        In C#, the System.Threading.Thread class is used for working with threads. It             allows creating and  accessing individual threads in a multithreaded application.         The first thread to be executed in a process is called the main thread. When a C#         program starts execution, the main thread is automatically created.
+    </string>
+
+    <string name="AnonymoasMethod">
+         C# - Anonymous Method. As the name suggests, an anonymous method is a method             without a name. Anonymous methods in C# can be defined using the delegate keyword          and can be assigned to a variable of delegate type.Anonymous methods can also be         passed to a method that accepts the delegate as a parameter.
+    </string>
+
+    <string name="LambdaExpression">
+          A lambda expression is an anonymous function that you can use to create                  delegates  or expression tree types. By using lambda expressions,you can write            local functions that can be passed as arguments or returned as the value of                function calls. A lambda expression is the most convenient way to create that              delegate.
+    </string>
+
+    <string-array name="Topic">
+
+        <item>Printf</item>
+        <item>Scanf</item>
+        <item>Loop</item>
+        <item>Condition</item>
+        <item>Operator</item>
+        <item>file</item>
+        <item>Structure</item>
+        <item>Nested Loop</item>
+        <item>Array</item>
+        <item>String</item>
+        <item>Switch</item>
+        <item>Nested if</item>
+        <item>HeaderFile</item>
+        <item>For Loop</item>
+        <item>While Loop</item>
+        <item>Pointer</item>
+
+
+    </string-array>
+
+    <string-array name="Topic1">
+
+        <item>System out</item>
+        <item>Scanner</item>
+        <item>Class</item>
+        <item>Condition</item>
+        <item>Loop</item>
+        <item>Inheritance</item>
+        <item>Polymorphisum</item>
+        <item>Encapsulation</item>
+        <item>Abstraction</item>
+        <item>Interface</item>
+        <item>File</item>
+        <item>ArrayList</item>
+        <item>LinkedList</item>
+        <item>Hashmap</item>
+        <item>Switch</item>
+        <item>Operator</item>
+        <item>Packege</item>
+        <item>Static</item>
+        <item>final</item>
+        <item>String</item>
+        <item>StringBuffer</item>
+        <item>StringBuilder</item>
+
+    </string-array>
+
+    <string-array name="shortcut">
+
+        <item>1.AAC</item>
+        <item>2.AI</item>
+        <item>3.ARPANET</item>
+        <item>4.ALGOL</item>
+        <item>5.ALU</item>
+        <item>6.AOL</item>
+        <item>7.API</item>
+        <item>8.APT</item>
+        <item>9.ARP</item>
+        <item>10.ASP</item>
+        <item>11.ATM</item>
+        <item>12.AVI</item>
+        <item>13.ASCII</item>
+        <item>14.AT</item>
+        <item>15.AVI</item>
+        <item>16.BASIC</item>
+        <item>17.BHTML</item>
+        <item>18.BMP</item>
+        <item>19.BIOS</item>
+        <item>20.B2B</item>
+        <item>21.B2C</item>
+        <item>22.BIU</item>
+        <item>23.BPS</item>
+        <item>24.BCC</item>
+        <item>25.CC</item>
+        <item>26.CAI</item>
+
+
+    </string-array>
+
+    <string-array name="FullMeaning">
+
+        <item> Advance Audio Codeing  </item>
+        <item> Artifical Inteligence </item>
+        <item> Acronym from Advanced Research Projects Agency Network</item>
+        <item> Algorithm Language</item>
+        <item> Arithmatic Logic Unit</item>
+        <item> American Online</item>
+        <item> Application program Interface</item>
+        <item> Abbrivation Apartment</item>
+        <item> Address Resulation Protocal</item>
+        <item> Application Server Provider</item>
+        <item> Automatic Tralier Machine</item>
+        <item> Audio Video Interleaved </item>
+        <item> American Standard Code for Information Interchange</item>
+        <item> Ameriacn Technology</item>
+        <item> Audio Video Interleaved</item>
+        <item> An acronym for Beginner's All-purpose Symbolic Instruction Code</item>
+        <item> Basic Hypertex Markup Language</item>
+        <item> BitMap</item>
+        <item> Basic Input Output System</item>
+        <item> Bussiness to Bussiness</item>
+        <item> Business to consumer</item>
+        <item> Bangladesh International University</item>
+        <item> Bits per Second</item>
+        <item> Blind Carbon Copy</item>
+        <item> Credit Card</item>
+        <item> Computer-Aided Instruction</item>
+
+    </string-array>
+
+    <string-array name="Topic3">
+
+        <item>Writeline</item>
+        <item>Readline</item>
+        <item>Inharitance</item>
+        <item>Polimorphisum</item>
+        <item>Loop</item>
+        <item>Foreach Loop</item>
+        <item>Namespace</item>
+        <item>Static</item>
+        <item>Method Hiding</item>
+        <item>Method Overridding</item>
+        <item>Method Overloading</item>
+        <item>Struct</item>
+        <item>Interface</item>
+        <item>Abstruct Class</item>
+        <item>Delegets</item>
+        <item>Exception Handling</item>
+        <item>Enums</item>
+        <item>Access Modifier</item>
+        <item>Thread</item>
+        <item>Anonymoas Method</item>
+        <item>Lambda Expression</item>
+
+
+    </string-array>
+</resources>

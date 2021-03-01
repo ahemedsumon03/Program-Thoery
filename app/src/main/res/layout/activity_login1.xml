@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:padding="5dp"
+    tools:context="com.example.sumonahemed.projectdemo.LoginActivity1">
+
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+
+    <EditText
+        android:padding="6dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:id="@+id/edittext1Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:id="@+id/edittext2Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/loginbuttonId"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of incorrect attemps:"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textviewId"
+        />
+
+</LinearLayout>
